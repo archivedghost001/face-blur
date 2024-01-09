@@ -6,10 +6,10 @@ import time
 prototxt_path = "model-data/deploy.prototxt.txt"
 
 # Jalur model Caffe
-model_path = "model-data/res10_300x300_ssd_iter_140000_fp16.caffemodel"
+jalur_model = "model-data/res10_300x300_ssd_iter_140000_fp16.caffemodel"
 
 # memuat model Caffe
-model = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
+model = cv2.dnn.readNetFromCaffe(prototxt_path, jalur_model)
 
 # untuk menyambungkan ke kamera default
 cap = cv2.VideoCapture(0)
